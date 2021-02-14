@@ -12,6 +12,7 @@ import { BannerComponent } from './components/banner/banner.component';
 import { HomeComponent } from './PAGES/home/home.component'
 import { CheckoutComponent } from './PAGES/checkout/checkout.component'
 import { LoginComponent } from './PAGES/login/login.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -30,7 +31,8 @@ import { LoginComponent } from './PAGES/login/login.component';
     AppRoutingModule,
     BrowserAnimationsModule, 
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
