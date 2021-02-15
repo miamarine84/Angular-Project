@@ -7,7 +7,7 @@ import { ApiService } from 'src/app/SERVICE/api.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  items: any [];
   constructor(private api: ApiService) { }
 
   ngOnInit(): void {
@@ -15,7 +15,11 @@ export class HomeComponent implements OnInit {
   }
   getProducts(){
     this.api.getJson().subscribe(resp => {
-      console.log('resp', resp) 
+      console.log('resp', resp)
+      this.items = resp;
     })
+  }
+  addToCart(){
+    console.log('added to cart')
   }
 }

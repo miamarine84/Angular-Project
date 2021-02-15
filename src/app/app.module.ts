@@ -13,18 +13,20 @@ import { HomeComponent } from './PAGES/home/home.component'
 import { CheckoutComponent } from './PAGES/checkout/checkout.component'
 import { LoginComponent } from './PAGES/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { ProductsComponent } from './components/products/products.component';
 
 
 @NgModule({
   declarations: [
+    ProductsComponent,
     AppComponent,
     HeaderComponent,
     FooterComponent,
     LoginComponent,
     BannerComponent, 
     CheckoutComponent,
-    HomeComponent
+    HomeComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
